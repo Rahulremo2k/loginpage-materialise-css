@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' >
+    <link rel="stylesheet" href="style.css" type='text/css'>
+    <title>FossFreaks</title>
+</head>
+<body>
+  <h2 class="center-align">Foss IDE-Online</h2>
+  <h4 class="center-align">FossFreaks Private Limited</h4>
+ <div class="container">
+    <div class="row">
+    <div class="col l8 m8 s12 center-align">
+      <div class="z-depth-5">
+        
+          <form class="card-panel hoverable">
+              <span class="card-title"><h4>Send Request</h4></span>
+                <div class="input-field ">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="icon_prefix" type="text" class="validate">
+                  <label for="icon_prefix">Name</label>
+               </div>
+                <br>
+                <div class="input-field ">
+                  <i class="material-icons prefix">email</i>
+                  <input id="icon_email" type="email" class="validate">
+                  <label for="icon_email">Email</label>
+                </div>
+                <br>
+                <div class="input-field ">
+                  <i class="material-icons prefix">phone</i>
+                  <input id="icon_telephone" type="tel" class="validate" data-length="10">
+                  <label for="icon_telephone">Phone number</label>
+                </div>
+                <br>
+                <div class="input-field ">
+                  <i class="material-icons prefix">chat</i>
+                  <input id="icon_comment" type="tel" class="validate" data-length="50">
+                  <label for="icon_comment">How you are planning to the IDE?</label>
+                </div>
+                <br>
+                <a href="#" class="btn waves-effect waves-light">
+                <span>Send</span>
+                <i class="material-icons right">send</i>
+                </a>
+                <br>
+                <p>If you have an account?
+                <a class ="black-text" href="index.html">Login</a> 
+                </p>
+                <br>        
+            </form>
+           
+          </div>
+      </div>
+    </div> 
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded",function() {
+    const counter = document.querySelectorAll("input#icon_telephone,input#icon_comment");
+    M.CharacterCounter.init(counter);
+  });
+</script>
+</body>
+</html>
